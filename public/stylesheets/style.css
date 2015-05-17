@@ -1,0 +1,157 @@
+/* base */
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: lightgreen;
+}
+#wrap {
+	width: 1200px;
+	height: 700px;
+	margin: 0 auto;
+	position: relative;
+}
+/* 桌子 */
+.table {
+	width: 1100px;
+	height: 25px;
+	background-color: #444;
+	position: absolute;
+	left: 50%;
+	margin-left: -550px;
+	top: 80%;
+}
+.table:before, .table:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 100px;
+	background-color: #efb;
+	top: 100%;
+	border-left: 5px solid #444;
+	border-right: 5px solid #444;
+}
+.table:before {
+	left: 200px;
+}
+.table:after {
+	left: 870px;
+}
+
+/* 笔记本 */
+.macbook {
+	position: absolute;
+	top: 134px;
+	left: 50%;
+	margin-left: -470px;
+}
+.macbook .screen {
+	position: absolute;
+	width: 750px;
+	height: 400px;
+	border-radius: 15px;
+	background-color: #fff;
+	border: 2px solid #555;
+}
+.macbook .display {
+	left: 15px;
+	top: 15px;
+	position: absolute;
+	width: 720px;
+	height: 370px;
+	background-color: #999;
+}
+.macbook .bottom {
+	position: absolute;
+	left: -45px;
+	top: 402px;
+	height: 20px;
+	width: 840px;
+	background: #fff;
+	border: 2px solid #555;
+	border-radius: 3px;
+}
+/* 杯子 */
+.cup {
+	position: absolute;
+	right: 10%;
+	bottom: 20%;
+	height: 70px;
+	width: 80px;
+	border-bottom-left-radius: 25%;
+	border-bottom-right-radius: 25%;
+	background-color: #fff;
+}
+.cup:before {
+	position: absolute;
+	top: -20px;
+	content: "";
+	position: absolute;
+	background-color: #4F2B07;
+	width: 60px;
+	height: 15px;
+	border: 10px solid #fff;
+	border-radius: 70%;
+}
+.cup:after {
+	content: "";
+	position: absolute;
+	top: 6px;
+	left: 60px;
+	width: 25px;
+	height: 30px;
+	border: 10px solid #fff;
+	border-radius: 40%;
+}
+
+/* 拖拽部分样式 */
+#drag {
+	width: 200px;
+	height: 150px;
+	position: absolute;
+	cursor: move;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale);
+	left: 260px;
+	top: 110px;
+	background-color: #eee;
+}
+#change {
+	height: 10px;
+	width: 10px;
+	background: url(../images/resize.png);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	cursor: se-resize;
+}
+
+/* 按钮 */
+.btn {
+	padding: 10px;
+	position: absolute;
+	right: 10%;
+	top: 25%;
+}
+.btn a {
+	display: block;
+	height: 30px;
+	width: 100px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #ff8140;
+	color: #fff;
+	position: relative;
+	border-radius: 5px;
+	border: 1px solid #f77c3d;
+	text-decoration: none;
+}
+.btn input {
+	display: block;
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	cursor: pointer;
+}
